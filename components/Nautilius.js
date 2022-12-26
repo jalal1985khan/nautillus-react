@@ -22,10 +22,10 @@ function CardExample() {
 <Col className="icon-desc">
 <Row className="nuat-text">
     <Col className="naut-text">
-<CountUp start={5} end={15} suffix={' Years.'}/>
+<CountUp start={5} end={15} suffix={' <small>Years.</small>'}/>
     </Col>
     <Col className="naut-text">
-    <CountUp start={1} end={6} suffix={' Offices.'} separator={','}/>
+    <CountUp start={1} end={6} suffix={' <small>Offices.</small>'} separator={','}/>
     </Col>
     </Row>
 <Row className="nuat-text">

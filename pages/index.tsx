@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import Banner from '../components/HomeBanner'
 import ThePs from '../components/The4ps'
 import Naut from '../components/Nautilius'
+import Servcies from '../components/OurServices'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
 <Banner/>
 <ThePs/>
 <Naut/>
+<Servcies/>
+<Footer/>
     </>
   )
 }

@@ -1,128 +1,191 @@
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-    body {
-        font-family: 'Merriweather', serif !important;
-    }
-    
-    .home-banner {
-        height: 561px;
-        width: 100%;
-        background-size: cover;
-    }
-    
-    .ban-text {
-        height: 480px !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        color: white;
-        font-size: 39px;
-        line-height: 35px;
-    }
-    
-    .ani-text {
-        align-items: baseline;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        color: white;
-        font-size: 20px;
-        line-height: 35px;
-        border: 1px solid #027b9f;
-        background-color: #03313F;
-    }
-    
-    .ani-text span {
-        font-size: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .ps-text {
-        font-size: 40px;
-        line-height: 30px;
-    }
-    
-    .ps-text-sub {
-        font-size: 35px;
-    }
-    
-    .naut-text {
-        align-items: baseline;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        color: white;
-        font-size: 20px;
-        line-height: 35px;
-        background-color: #03313F;
-        padding: 25px;
-    }
-    
-    .naut-text span {
-        font-size: 40px;
-        padding-top: 31px;
-    }
-    
-    .icon-text {
-        width: 75%;
-    }
-    
-    .nuat-text {
-        width: 100%;
-    }
-    
-    .nuat-text p {
-        padding-bottom: 30px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    
-    .nuat-btn {
-        font-size: 18px !important;
-        background: #03313F !important;
-        border: 1px solid white !important;
-        border-radius: 0px !important;
-        font-weight: 200 !important;
-    }
-    
-    .icon-desc {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        justify-content: flex-end;
-    }
-    
-    .m-font {
-        font-family: 'Merriweather', serif;
-    }
-    
-    .wbg-main {
-        background-color: #027B9F !important;
-    }
-    
-    .navbar-collapse {
-        flex-grow: 0 !important;
-    }
-    
-    .dropdown-menu {
-        background-color: #027B9F !important;
-    }
-    
-    .dropdown-item {
-        color: white !important;
-    }
-    
-    .dropdown-item:hover {
-        color: black !important;
-    }
-    
-    .dropdown-divider {
-        border-top: 1px solid rgb(255 255 255 / 50%) !important;
-    }
-    
-    @media (min-width: 992px) {
-        .navbar-expand-lg .navbar-nav .nav-link {
-            color: white !important;
-            padding-right: 34px !important;
-            font-size: 17px !important;
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        body {
+            font-family: 'Merriweather', serif !important;
         }
-    }
+        
+        .home-banner {
+            height: 561px;
+            width: 100%;
+            background-size: cover;
+        }
+        
+        .ban-text {
+            height: 480px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 39px;
+            line-height: 35px;
+        }
+        
+        .ani-text {
+            align-items: baseline;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+            line-height: 35px;
+            border: 1px solid #027b9f;
+            background-color: #03313F;
+        }
+        
+        .ani-text span {
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+        
+        .ps-text {
+            font-size: 40px;
+            line-height: 30px;
+        }
+        
+        .ps-text-sub {
+            font-size: 35px;
+        }
+        
+        .naut-text {
+            align-items: baseline;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+            line-height: 35px;
+            background-color: #03313F;
+            padding-right: 17px !important;
+            padding-left: 50px !important;
+            padding-bottom: 14px;
+            padding-top: 19px;
+        }
+        
+        .naut-text span {
+            font-size: 74px;
+            padding-top: 31px;
+        }
+        
+        .icon-text {
+            width: 75%;
+        }
+        
+        .nuat-text {
+            width: 100%;
+        }
+        
+        .nuat-text p {
+            padding-bottom: 30px;
+        }
+        
+        .naut-text span small {
+            font-size: 26px !important;
+        }
+        
+        .nuat-btn {
+            font-size: 18px !important;
+            background: #03313f00 !important;
+            border: 1px solid white !important;
+            border-radius: 0px !important;
+            font-weight: 200 !important;
+        }
+        
+        .icon-desc {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            justify-content: flex-end;
+        }
+        
+        .m-font {
+            font-family: 'Merriweather', serif;
+        }
+        
+        .wbg-main {
+            background-color: #027B9F !important;
+        }
+        
+        .navbar-collapse {
+            flex-grow: 0 !important;
+        }
+        
+        .dropdown-menu {
+            background-color: #027B9F !important;
+        }
+        
+        .dropdown-item {
+            color: white !important;
+        }
+        
+        .dropdown-item:hover {
+            color: black !important;
+        }
+        
+        .dropdown-divider {
+            border-top: 1px solid rgb(255 255 255 / 50%) !important;
+        }
+        
+        .service-card {
+            display: flex;
+            flex-direction: row !important;
+            width: 100%;
+            border: 0px !important;
+            border-radius: 0px !important;
+        }
+        
+        .service-img {
+            width: 50% !important;
+            border-radius: 0px !important;
+        }
+        
+        .s-body {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            padding-top: 55px !important;
+            padding-bottom: 55px !important;
+            padding-right: 70px !important;
+            padding-left: 70px !important;
+        }
+        
+        .c-title {
+            font-size: 50px !important;
+            color: white !important;
+        }
+        
+        .c-para {
+            font-size: 28px !important;
+            color: white !important;
+        }
+        
+        .footer-bg {
+            background-color: #03313f;
+        }
+        
+        .footer-text {
+            color: #fff;
+        }
+        
+        ul .f-text a {
+            color: #BEBEBE !important;
+            /* color: red; */
+            font-size: 19px;
+            text-decoration: none;
+            font-weight: 200;
+        }
+        
+        .footer-bg hr {
+            color: #BEBEBE !important;
+        }
+        
+        .footer {
+            padding: 69px;
+            color: #fff;
+        }
+        
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                color: white !important;
+                padding-right: 34px !important;
+                font-size: 17px !important;
+            }
+        }
