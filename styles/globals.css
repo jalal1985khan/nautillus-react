@@ -3,6 +3,94 @@
         font-family: 'Merriweather', serif !important;
     }
     
+    .home-banner {
+        height: 561px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .ban-text {
+        height: 480px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        font-size: 39px;
+        line-height: 35px;
+    }
+    
+    .ani-text {
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        font-size: 20px;
+        line-height: 35px;
+        border: 1px solid #027b9f;
+        background-color: #03313F;
+    }
+    
+    .ani-text span {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .ps-text {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    
+    .ps-text-sub {
+        font-size: 35px;
+    }
+    
+    .naut-text {
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        font-size: 20px;
+        line-height: 35px;
+        background-color: #03313F;
+        padding: 25px;
+    }
+    
+    .naut-text span {
+        font-size: 40px;
+        padding-top: 31px;
+    }
+    
+    .icon-text {
+        width: 75%;
+    }
+    
+    .nuat-text {
+        width: 100%;
+    }
+    
+    .nuat-text p {
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .nuat-btn {
+        font-size: 18px !important;
+        background: #03313F !important;
+        border: 1px solid white !important;
+        border-radius: 0px !important;
+        font-weight: 200 !important;
+    }
+    
+    .icon-desc {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    
     .m-font {
         font-family: 'Merriweather', serif;
     }

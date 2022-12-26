@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Banner from '../components/HomeBanner'
+import ThePs from '../components/The4ps'
+import Naut from '../components/Nautilius'
 
 export default function Home() {
   return (
@@ -10,7 +13,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
+    
 <Header/>
+<Banner/>
+<ThePs/>
+<Naut/>
     </>
   )
 }
