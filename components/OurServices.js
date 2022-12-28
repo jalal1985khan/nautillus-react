@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 function BasicExample() {
   return (
-    <Container className="mt-4">
+    <Container className="mt-4 mb-4">
         <h1 className="mb-4">Our services</h1>
     <Card  className="service-card">
       <Card.Img  src="/images/services.jpeg" className="service-img"/>

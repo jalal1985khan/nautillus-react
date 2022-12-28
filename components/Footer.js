@@ -1,4 +1,4 @@
-import {Container, ListGroup, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import Link from 'next/link';
 
 function AutoLayoutExample() {
@@ -41,12 +41,13 @@ function AutoLayoutExample() {
         <Col>
         <h2 className="footer-text">Contact</h2>
         <hr className="footer-div"/>
-        <ListGroup variant="flush">
-      <ListGroup.Item>Cras justo odio</ListGroup.Item>
-      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-      <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-      <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-    </ListGroup>
+        <ul className="fs-4 list-unstyled">
+                                <li className="f-text">Email us :</li>
+                                <li className="f-text"><Link href="/ship-agency-logistics">hello@nautilusshipping.com</Link></li>
+                                <li className="f-text">Call us</li>
+                                <li className="f-text"><Link href="/commercial-services">+ 91 44 4684 9999</Link></li>
+                                
+                            </ul> 
         
         </Col>
       </Row>

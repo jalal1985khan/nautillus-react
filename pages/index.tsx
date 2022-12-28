@@ -4,6 +4,7 @@ import Banner from '../components/HomeBanner'
 import ThePs from '../components/The4ps'
 import Naut from '../components/Nautilius'
 import Servcies from '../components/OurServices'
+import Contact from '../components/Contactus'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
 <ThePs/>
 <Naut/>
 <Servcies/>
+<Contact/>
 <Footer/>
     </>
   )

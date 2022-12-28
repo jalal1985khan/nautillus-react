@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Link from 'next/link';
 
 function NavScrollExample() {
   return (
@@ -19,7 +20,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Our Approach</Nav.Link>
+            <Link href="/our-approach" className="nav-link">Our Approach</Link>
             
             <NavDropdown title="Services" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action5">Ship Management</NavDropdown.Item>
@@ -35,13 +36,14 @@ function NavScrollExample() {
             </NavDropdown>
             <Nav.Link href="#action2">Fleet</Nav.Link>
             <Nav.Link href="#action2">Careers</Nav.Link>
-            <Nav.Link href="#action2">News & Insights</Nav.Link>
+            <Link href="/news-insights" className="nav-link">News & Insights</Link>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action5">Company</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">Team</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action2">Contact</Nav.Link>
+            
+            <Link href="/contact-us" className="nav-link">Contact</Link>
           </Nav>
          
         </Navbar.Collapse>
