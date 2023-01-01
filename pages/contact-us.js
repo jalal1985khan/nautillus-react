@@ -1,8 +1,10 @@
 import { useState} from 'react';
+import axios from "axios";
 import {Container, Row, Col,Card, Image} from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Office from '../components/ContactOffice';
+import configData from "config.json";
 
 
 

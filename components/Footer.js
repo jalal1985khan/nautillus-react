@@ -34,7 +34,7 @@ function AutoLayoutExample() {
         <h2 className="footer-text">Fleet</h2>
         <hr/>
         <ul className="fs-4 list-unstyled">
-                                <li className="f-text"><Link href="/fleet/">Ship Management</Link></li>
+                                <li className="f-text"><Link href="/fleet/">Fleet</Link></li>
                             </ul>  
         
         </Col>
@@ -48,9 +48,24 @@ function AutoLayoutExample() {
                                 <li className="f-text"><Link href="/commercial-services">+ 91 44 4684 9999</Link></li>
                                 
                             </ul> 
-        
+                            <Container>
+        <ul className="list-unstyled d-flex ">
+        <li className="f-text px-2"><Link href="https://www.facebook.com/NautilusShippingIndia/" target="_blank"><img src="/images/facebook.png" style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://in.linkedin.com/company/nautilusshipping" target="_blank"><img src="/images/linkedin.png" style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://www.instagram.com/nautilusshipping/?hl=en" target="_blank"><img src="/images/instagram.png" style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://www.youtube.com/channel/UC5V1kVUx3Cg9WjI3PotjX1g" target="_blank"><img src="/images/youtube.png" style={{height:40}}/></Link></li>
+        </ul>
+      </Container>
         </Col>
       </Row>
+      <hr/>
+      <Container>
+        <ul className="list-unstyled d-flex justify-content-center">
+        <li className="f-text px-3"><Link href="/sitemap/">Sitemap</Link></li>
+        <li className="f-text px-3"><Link href="/privacy-statement/">Privacy Statement</Link></li>
+        <li className="f-text"><Link href="/disclaimer/">Disclaimer</Link></li>
+        </ul>
+      </Container>
     </Container>
   );
 }

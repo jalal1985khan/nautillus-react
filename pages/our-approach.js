@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Row, Col,Card, Image, Accordion} from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Office from '../components/ContactOffice';
+
 
 const approach = () => {
   return (

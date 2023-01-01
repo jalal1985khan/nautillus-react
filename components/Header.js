@@ -5,14 +5,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Link from 'next/link';
+import { useRouter } from "next/router";
 
 function NavScrollExample() {
+  const router = useRouter();
   return (
     <Navbar  expand="lg" className="wbg-main">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Link href="/" className="navbar-brand">
             <LazyLoadImage src="/images/logo.png"/>
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,27 +22,28 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link href="/our-approach" className="nav-link">Our Approach</Link>
+            <Link href="/our-approach" className="nav-link ">Our Approach</Link>
             
             <NavDropdown title="Services" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action5">Ship Management</NavDropdown.Item>
+
+              <NavDropdown.Item ><Link href="/ship-management" className="menu">Ship Management</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Crew Management</NavDropdown.Item>
+              <NavDropdown.Item><Link href="/crew-management" className="menu">Crew Management</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Ship Agency & Logistics</NavDropdown.Item>
+              <NavDropdown.Item><Link href="/ship-agency-logistics" className="menu">Ship Agency & Logistics</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Inspection</NavDropdown.Item>
+              <NavDropdown.Item><Link href="/inspection" className="menu">Inspection</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Commercial Services</NavDropdown.Item>
+              <NavDropdown.Item> <Link href="/commercial-services" className="menu">Commercial Services</Link></NavDropdown.Item>
               
             </NavDropdown>
-            <Nav.Link href="#action2">Fleet</Nav.Link>
-            <Nav.Link href="#action2">Careers</Nav.Link>
+            <Link href="/fleet" className="nav-link">Fleet</Link>
+            <Nav.Link href="/careers">Careers</Nav.Link>
             <Link href="/news-insights" className="nav-link">News & Insights</Link>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action5">Company</NavDropdown.Item>
+              <NavDropdown.Item ><Link href="/company" className="menu">Company</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Team</NavDropdown.Item>
+              <NavDropdown.Item ><Link href="/team" className="menu">Team</Link></NavDropdown.Item>
             </NavDropdown>
             
             <Link href="/contact-us" className="nav-link">Contact</Link>
