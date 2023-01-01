@@ -1,8 +1,9 @@
 import React from 'react'
-import {Container, Row, Col,Card, Image, Accordion, Button} from 'react-bootstrap';
+import {Container, Row, Col,Image,Button} from 'react-bootstrap';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 
 const approach = () => {
@@ -10,9 +11,9 @@ const approach = () => {
     <div>
 <Header/>
     
-    <Image
+  <Image
     src="/images/inspection_banner.jpeg"
-    width="100%"
+    width="1500"
     height="620"
     background='no-repeat'
     background-size= 'cover'
