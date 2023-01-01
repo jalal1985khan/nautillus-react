@@ -1,15 +1,14 @@
 import Header from '/components/Header';
 import Footer from '/components/Footer';
-import Router from 'next/router';
 import axios from "axios";
-import {Col,Container, Row, Image, Button, Form} from 'react-bootstrap';
+import {Col,Container, Row,Form} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import configData from "config.json";
 import { format } from 'date-fns'
 import Head from 'next/head'
 import { useState} from 'react';
 
-const post = ({data}) => {
+const Post = ({data}) => {
    
      
     const [file, setFile] = useState()
@@ -157,7 +156,7 @@ return (
   )
 }
 
-export default post
+export default Post
 
 
 

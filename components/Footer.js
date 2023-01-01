@@ -1,5 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import Link from 'next/link';
+import Image from "next/image";
 
 function AutoLayoutExample() {
   return (
@@ -50,10 +51,10 @@ function AutoLayoutExample() {
                             </ul> 
                             <Container>
         <ul className="list-unstyled d-flex ">
-        <li className="f-text px-2"><Link href="https://www.facebook.com/NautilusShippingIndia/" target="_blank"><img src="/images/facebook.png" style={{height:40}}/></Link></li>
-        <li className="f-text px-2"><Link href="https://in.linkedin.com/company/nautilusshipping" target="_blank"><img src="/images/linkedin.png" style={{height:40}}/></Link></li>
-        <li className="f-text px-2"><Link href="https://www.instagram.com/nautilusshipping/?hl=en" target="_blank"><img src="/images/instagram.png" style={{height:40}}/></Link></li>
-        <li className="f-text px-2"><Link href="https://www.youtube.com/channel/UC5V1kVUx3Cg9WjI3PotjX1g" target="_blank"><img src="/images/youtube.png" style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://www.facebook.com/NautilusShippingIndia/" target="_blank"><Image src="/images/facebook.png" width="40" height="40" alt="facebook" style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://in.linkedin.com/company/nautilusshipping" target="_blank"><Image src="/images/linkedin.png" width="40" height="40" alt="linkedin"  style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://www.instagram.com/nautilusshipping/?hl=en" target="_blank"><Image src="/images/instagram.png" width="40" height="40" alt="instagram"  style={{height:40}}/></Link></li>
+        <li className="f-text px-2"><Link href="https://www.youtube.com/channel/UC5V1kVUx3Cg9WjI3PotjX1g" target="_blank"><Image src="/images/youtube.png" width="40" height="40" alt="youtube"  style={{height:40}}/></Link></li>
         </ul>
       </Container>
         </Col>

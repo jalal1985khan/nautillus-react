@@ -1,8 +1,9 @@
 import React from 'react'
-import {Container, Row, Col,Card, Image, Accordion, Button} from 'react-bootstrap';
+import {Container, Row, Col,Button} from 'react-bootstrap';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from "next/image";
 
 
 const approach = () => {
@@ -12,7 +13,7 @@ const approach = () => {
     
     <Image
     src="/images/crew_banner.jpeg"
-    width="100%"
+    width="1500"
     height="620"
     background='no-repeat'
     background-size= 'cover'
@@ -25,7 +26,7 @@ const approach = () => {
 <p className="fs-4">We understand the importance of a qualified crew that is at the forefront of all activities and is the key to a vessel’s safe and smooth day-to-day operation. In addition, safeguarding the vessel’s and the owner’s interests requires highly efficient utilization of crew. Through our own crewing offices in Chennai, Goa, Mumbai and, Kochi, we maintain one of India’s largest pools of qualified, motivated and, dedicated seafarers that fulfill these needs efficiently.</p>
 <p className="fs-4">We offer crew supply services for all types of vessels. By using modern search and selection methods we ensure that our employees not only have the required professional qualifications but also have the right outlook and personality required for the job. Our crew management services include recruitment, selection, training, and management of officers and cadets and rating them for suitability and deployment for different vessels.</p>
 <Row>
-<Col sm={6}><img src="/images/crew_img.jpeg"/></Col>
+<Col sm={6}><Image src="/images/crew_img.jpeg" width="1000" height="500" alt="Shipping website "/></Col>
 </Row>
 <p className="fs-4 mt-3">We maintain a state-of-the-art database management system and crewing module that has been developed using advanced information technology systems. This ready repository helps in sourcing relevant crew to match the requirements of different ships.</p>
 <p className="fs-4">Our crew survey and statistics show the difference we make in the lives of our crew besides the owners.  Nautilus shipping has one of the highest crew happiness and work satisfaction figures because we are able to provide back to back contracts and career development opportunities. In the long run, this enables us to maintain good continuity on ships and high retention rates. </p>
@@ -62,25 +63,25 @@ const approach = () => {
 <Col>
 <h3>Commercial Services</h3>
 <Link href="/commercial-services" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" alt="icons" style={{height:50}}/></Button>
 </Link>
 </Col>    
 <Col>
 <h3>Crew Management</h3>
 <Link href="/crew-management" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" alt="icons" style={{height:50}}/></Button>
 </Link>
 </Col>    
 <Col>
 <h3>Ship Agency & Logistics</h3>
 <Link href="/ship-agency-logistics" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" alt="icons" style={{height:50}}/></Button>
 </Link>
 </Col>    
 <Col>
 <h3 style={{height:67}}>Inspection</h3>
 <Link href="/inspection" >
-    <Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+    <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" alt="icons" style={{height:50}}/></Button>
 </Link>
 </Col>    
 </Row>

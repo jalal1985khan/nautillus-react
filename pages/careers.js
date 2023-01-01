@@ -21,9 +21,6 @@ const SuccessStories = () => {
     
     let url = "";
     const urlPage = `${page}`;
-    //console.log(urlPage)
-    //url = query ? `${API_ENDPOINT}${urlPage}${urlQuery}` : "";
-    //url = `${configData.SERVER_URL}posts?_embed&categories[]=12&status[]=publish&per_page=${urlPage}`;
     url = `${configData.SERVER_URL}job?_embed&status[]=publish&per_page=${urlPage}`;
     try {
       const response = await fetch(url);
@@ -85,7 +82,7 @@ const SuccessStories = () => {
 movies.map((post, index) => { 
 
 return(
-<Head>
+<Head key={post.id}>
 {/* <!-- HTML Meta Tags --> */}
 <title>Current Job Openings - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
 <meta name="description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
