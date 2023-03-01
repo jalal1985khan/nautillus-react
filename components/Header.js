@@ -38,7 +38,7 @@ function NavScrollExample() {
               
             </NavDropdown>
             <Link href="/fleet" className="nav-link">Fleet</Link>
-            <Nav.Link href="/careers">Careers</Nav.Link>
+            <Link href="/careers">Careers</Link>
             <Link href="/news-insights" className="nav-link">News & Insights</Link>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
               <NavDropdown.Item ><Link href="/company" className="menu">Company</Link></NavDropdown.Item>
