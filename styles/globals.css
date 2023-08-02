@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body {
+    font-family: 'Merriweather', serif !important;
+}
+
+.home-banner {
+    height: 561px;
+    width: 100%;
+    background-size: cover;
+}
+
+.ban-text {
+    height: 480px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-size: 39px;
+    line-height: 35px;
+}
+
+.ani-text {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    border: 1px solid #027b9f;
+    background-color: #03313F;
+}
+
+.ani-text span {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.ps-text {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.ps-text-sub {
+    font-size: 35px;
+}
+
+.naut-text {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    background-color: #03313F;
+    padding-right: 17px !important;
+    padding-left: 50px !important;
+    padding-bottom: 14px;
+    padding-top: 19px;
+}
+
+.naut-text span {
+    font-size: 74px;
+    padding-top: 31px;
+}
+
+.icon-text {
+    width: 75%;
+}
+
+.nuat-text {
+    width: 100%;
+}
+
+.nuat-text p {
+    padding-bottom: 30px;
+}
+
+.naut-text span small {
+    font-size: 26px !important;
+}
+
+.nuat-btn {
+    font-size: 18px !important;
+    background: #03313f00 !important;
+    border: 1px solid white !important;
+    border-radius: 0px !important;
+    font-weight: 200 !important;
+}
+
+.icon-desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.m-font {
+    font-family: 'Merriweather', serif;
+}
+
+.wbg-main {
+    background-color: #027B9F !important;
+}
+
+.wbg-grey {
+    background-color: #EAEBEB !important;
+}
+
+.wbg-white {
+    background-color: #fff !important;
+}
+
+.wbg-dark {
+    background-color: #E8E8E8 !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: #027B9F !important;
+    border-radius: 0px !important;
+}
+
+.c_box {
+    height: 222px;
+    border: 1px solid #eaeaea !important;
+    padding: 34px !important;
+}
+
+.c_box:hover {
+    background-color: #017BA0;
+    color: #fff;
+}
+
+.s_btn {
+    color: #017BA0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28px !important;
+    background: rgba(255, 0, 0, 0) !important;
+    border: 1px solid #017BA0 !important;
+    border-radius: 0px !important;
+}
+
+a.menu {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.menu:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover a {
+    color: black !important;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgb(255 255 255 / 50%) !important;
+}
+
+.grad-color {
+    background: rgb(8, 139, 178);
+    background: linear-gradient(110deg, rgba(8, 139, 178, 1) 0%, rgba(19, 177, 142, 1) 79%);
+    padding: 40px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
+.service-img {
+    width: 50% !important;
+    border-radius: 0px !important;
+}
+
+.c_btn {
+    background-color: #43556500 !important;
+    color: #017BA0 !important;
+    font-size: 23px !important;
+    font-weight: 100 !important;
+    padding: 21px !important;
+    border: 1px solid #017BA0 !important;
+    border-radius: 0px !important;
+}
+
+.c_btn:hover {
+    background-color: #017BA0 !important;
+    color: #fff !important;
+}
+
+.s-body {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+    padding-right: 70px !important;
+    padding-left: 70px !important;
+}
+
+.c-title {
+    font-size: 50px !important;
+    color: white !important;
+}
+
+.c-para {
+    font-size: 28px !important;
+    color: white !important;
+}
+
+.footer-bg {
+    background-color: #03313f;
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.j-card {
+    background-color: #fff;
+    padding: 24px;
+    border-bottom: 4px solid #017BA0;
+    width: 70% !important;
+}
+
+.j-btn {
+    background-color: #174F65 !important;
+    padding: 13px !important;
+    border: 0px !important;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.office {
+    background-color: #174F65;
+}
+
+.card {
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
+.c-head {
+    background-color: #C4D1D8 !important;
+    border-radius: 0px !important;
+    color: #000000 !important;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.off-phone {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 24px !important;
+    font-weight: 200 !important;
+}
+
+.insights {
+    height: 100px !important;
+}
+
+.pr-4 {
+    padding-right: 21px;
+}
+
+.card-titles {
+    height: 16px !important;
+}
+
+.read_btn {
+    font-family: "Merriweather", Sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    fill: #017BA0;
+    color: #017BA0 !important;
+    background-color: #FFFFFF !important;
+    border-style: solid !important;
+    border-width: 3px 3px 3px 3px !important;
+    border-color: #017BA0 !important;
+    border-radius: 36px 36px 36px 36px !important;
+}
+
+.b-border {
+    border-bottom: 4px solid #017BA0;
+}
+
+.txt-18 {
+    color: #FFFFFF;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 170px;
+}
+
+ul .f-text a {
+    color: #BEBEBE !important;
+    /* color: red; */
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.footer-bg hr {
+    color: #BEBEBE !important;
+}
+
+.footer {
+    padding: 69px;
+    color: #fff;
+}
+
+.h-contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.post-banner {
+    background-repeat: no-repeat;
+    height: 450px;
+    color: #fff;
+    display: flex;
+    background: fixed;
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back-btn {
+    border-radius: 0px !important;
+    background-color: #034F66 !important;
+    border: 0px !important;
+}
+
+.accordion-button {
+    border-width: 0px;
+    background-color: #017BA0 !important;
+    padding: 30px 25px 30px 25px;
+    color: white !important;
+    font-size: 21px !important;
+    border-radius: 0px!important;
+}
+
+.offer {
+    padding: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #DDDDDD;
+    background: linear-gradient(to right, #ebebeb 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.offer:hover {
+    background: linear-gradient(to right, #ebebeb 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    ;
+}
+
+.self {
+    align-self: center;
+}
+
+.s_table {
+    height: 160px;
+    border: 1px solid #eaeaea;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.s_table:hover {
+    background-color: #027B9F;
+    color: #fff;
+}
+
+.heading {
+    color: #017BA0;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.heading-1 {
+    color: #017BA0;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.a-tab-text {
+    font-size: 20px;
+}
+
+.a-box {
+    background-color: white;
+    width: 80%;
+    border: 2px solid #e2e1e1;
+    padding: 41px;
+}
+
+.a-center {
+    text-align: -webkit-center;
+}
+
+.s_box {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 1em 1rem !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0px !important;
+}
+
+.text-box {
+    text-align: -webkit-left;
+    width: 80% !important;
+    margin-top: 47px !important;
+}
+
+.text-box-1 {
+    text-align: -webkit-left;
+    width: 90% !important;
+    margin-top: 0px !important;
+}
+
+.text-box span {
+    font-weight: 900;
+}
+
+.txt {
+    color: #8DD8EF !important;
+}
+
+.line {
+    color: #8DD8EF !important;
+}
+
+.register {
+    background-color: #034F66 !important;
+    color: #ffffff !important;
+    border: 0px !important;
+    padding: 14px !important;
+    border-radius: 0px !important;
+}
+
+.r_error {
+    color: red;
+}
+
+.reg-success {
+    color: #027B9F;
+    font-size: 28px;
+}
+
+i.fa.fa-phone,
+i.fa.fa-envelope-o {
+    font-size: 41px !important;
+}
+
+.r_email {
+    font-weight: 100 !important;
+}
+
+.r_email a {
+    font-weight: 100;
+    color: white !important;
+    text-decoration: none;
+}
+
+.r_phone {
+    font-weight: 800;
+}
+
+.r_phone a {
+    font-weight: 800;
+    color: white !important;
+    text-decoration: none;
+}
+
+.r_line {
+    color: white;
+    width: 80%;
+    /* border: 1px solid white; */
+    opacity: 0.6;
+}
+
+.banner-img {
+    background-size: cover;
+    height: auto;
+}
+img.logo {
+    width: 12%;
+}
+.navbar-collapse {
+    display: none;
+}
+.submenu{
+ display: none;   
+}
+.list-group-item{
+    padding: 16px !important;    
+}
+.list-group-item:hover{
+    padding: 16px !important;
+    background-color: #017ba0;
+    color:#fff;    
+}
+.list-group{
+    border-radius: 0px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white !important;
+        padding-right: 34px !important;
+        font-size: 17px !important;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    img.logo {
+        width: 30%;
+    }
+
+}
