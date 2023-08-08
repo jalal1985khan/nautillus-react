@@ -19,7 +19,7 @@ const Post = ({data}) => {
     
     function handleSubmit(event) {
       event.preventDefault()
-      const url = 'https://www.nautilusshipping.com/contact-form-7/v1/contact-forms/8578/feedback';
+      const url = `${configData.SERVER_FROM}contact-form-7/v1/contact-forms/8578/feedback`;
       const formData = new FormData();
       formData.append('file', file);
       formData.append('fileName', file.name);
@@ -48,24 +48,24 @@ return (
 <Head key={post.id}>
 {/* <!-- HTML Meta Tags --> */}
 <title>{post['yoast_head_json']['title']}</title>
-<meta name="description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
+<meta name="description" content={post['yoast_head_json']['description']}></meta>
 
 {/* <!-- Google / Search Engine Tags --> */}
 <meta itemprop="name" content={post['yoast_head_json']['title']}></meta>
-<meta itemprop="description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
+<meta itemprop="description" content={post['yoast_head_json']['description']}></meta>
 <meta itemprop="image" content=""></meta>
 
 {/* <!-- Facebook Meta Tags --> */}
 <meta property="og:url" content={post['yoast_head_json']['og_url']}></meta>
 <meta property="og:type" content="article"></meta>
 <meta property="og:title" content={post['yoast_head_json']['title']}></meta>
-<meta property="og:description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
+<meta property="og:description" content={post['yoast_head_json']['description']}></meta>
 <meta property="og:image" content=""></meta>
 
 {/* <!-- Twitter Meta Tags --> */}
 <meta name="twitter:card" content="summary_large_image"></meta>
 <meta name="twitter:title" content={post['yoast_head_json']['title']}></meta>
-<meta name="twitter:description" content="If you have the right qualifications and skills and are looking for sea jobs, we are here to help. Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates. Our crewing team is based in Mumbai and Chennai and you can drop your […]"></meta>
+<meta name="twitter:description" content={post['yoast_head_json']['description']}></meta>
 <meta name="twitter:image" content=""></meta>
 
 </Head>
@@ -106,10 +106,9 @@ return (
 </Row>
 <Row>
 <Col><p>Joining Date:</p></Col>
-<Col><p>{format(
-  new Date(date),
-  'dd/MM/yyyy'
-)} {post['acf']['type_of_vessel']}</p></Col>    
+          <Col><p>
+  {post['acf']['joining_date']}
+   {post['acf']['type_of_vessel']}</p></Col>    
 </Row>
 </Col>    
 <Col>

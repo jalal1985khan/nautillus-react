@@ -1,7 +1,8 @@
 import React from 'react'
-import {Container, Row, Col,Card, Image, Accordion} from 'react-bootstrap';
+import {Container, Row, Col,Card, Accordion} from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 
 const approach = () => {
@@ -9,7 +10,7 @@ const approach = () => {
     <div>
 <Header/>
 <Container>
-<img src="/images/the_4Ps_Banner.jpeg"/>
+<Image src="/images/the_4Ps_Banner.jpeg" className="m-width" width="1300" height="700" alt="nautilus shipping"/>
 </Container>
 <Container className="text-box">
 <h1 className="fs-1">Our Approach</h1>

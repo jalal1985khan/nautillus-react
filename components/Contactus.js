@@ -22,6 +22,7 @@ function AutoLayoutExample() {
     const [errremail, setErrEmail] = useState(null);
     const [errrsubject, setErrSubject] = useState(null);
     const [success, setSuccess] = useState(true);
+    const [error, setError] = useState(false);
 
     
     
@@ -58,15 +59,18 @@ function AutoLayoutExample() {
                     setLoading(true);
                     setSpinner(false);
                     setSuccess(false);
+                    setError(false);
 
                 }
                 else{
                 setErrName(response.data['invalid_fields'][0]['message']);
                 setErrEmail(response.data['invalid_fields'][1]['message']);
-                setErrSubject(response.data['invalid_fields'][2]['message']);
+                //setErrSubject(response.data['invalid_fields'][2]['message']);
                 setSpinner(false);
+                    //setLoading(true);
+                    setError(true);
             }
-                // console.log(response.data)
+                 console.log(response.data)
             });
 
 
@@ -76,10 +80,10 @@ function AutoLayoutExample() {
     return (
         <Container fluid>
 
-            <Row>
+            <Row className="m-row">
                 <Col style={{ backgroundImage: `url(/images/contact_us_banner.jpeg)` }} className="h-contact d-flex flex-column justify-content-center">
 
-<h1 className="text-white fs-1 ">Contact us</h1>
+<h1 className="text-white fs-1 pt-4">Contact us</h1>
 <p className="text-white">Contact us for Ship Management, Crew Management, Ship Agency & Logistics, Inspection and Commercial Ship Services. Simply fill the form and we will get in touch as soon as possible.</p>
 <p className="text-white fs-2 r_phone"><Link href="tel:+914446849999">
 <i className="fa fa-phone"/> +91 44 4684 9999</Link></p>
@@ -88,7 +92,7 @@ function AutoLayoutExample() {
 <i class="fa fa-envelope-o" aria-hidden="true"/> hello@nautilushipping.com</Link></p>
 <hr className="r_line"/>
                 </Col>
-                <Col className="wbg-main pt-4">
+                <Col className="wbg-main pt-5">
                     <Container className="pt-4">
                         <p className="text-white">Note: Job Seekers, please visit our shipping job listing page</p>
 
@@ -164,7 +168,8 @@ function AutoLayoutExample() {
 
                     </form>
                    }
-                   {loading && <h1 class="reg-success mt-4">{post}</h1>}
+                    {loading && <h1 class="reg-success mt-4">{post}</h1>}
+                    {error && <h1 class="reg-error mt-4">{post}</h1>}
                 </Col>
             </Row>
         </Container>

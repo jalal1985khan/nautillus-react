@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Image from 'next/image';
 
 function NavScrollExample() {
   const router = useRouter();
@@ -37,7 +38,7 @@ function NavScrollExample() {
     <>
     <Navbar  expand="lg" className="wbg-main" >
       <Container fluid>
-        <img src="/images/logo.svg" className="logo"/>
+        <Link href="/"><Image src="/images/logo.svg" className="logo" width="100" height="80" alt="nautilus shipping"/></Link>
         
         <Navbar.Toggle aria-controls="navbarScroll" onClick={handleShow}/>
         <Navbar.Collapse id="navbarScroll">
@@ -47,9 +48,7 @@ function NavScrollExample() {
             navbarScroll
           >
             <Link href="/our-approach" className="nav-link ">Our Approach</Link>
-            
             <NavDropdown title="Services" id="navbarScrollingDropdown">
-
               <NavDropdown.Item ><Link href="/ship-management" className="menu">Ship Management</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item><Link href="/crew-management" className="menu">Crew Management</Link></NavDropdown.Item>
@@ -82,28 +81,36 @@ function NavScrollExample() {
    </Offcanvas.Header>
    <Offcanvas.Body>
           <ListGroup>
-      <ListGroup.Item>Our Approach</ListGroup.Item>
+            <Link href="/our-approach">
+              <ListGroup.Item>
+            Our Approach
+              </ListGroup.Item>
+            </Link>
             <ListGroup.Item  onClick={handleClickMenu1}>Services <i className="fa fa-angle-down"></i></ListGroup.Item>
             {isShownMenu1 && (
               <div>
-            <ListGroup.Item>Ship Management</ListGroup.Item>
-            <ListGroup.Item>Crew Management</ListGroup.Item>
-            <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item>
-            <ListGroup.Item>Inspection</ListGroup.Item>
-                <ListGroup.Item>Commercial Services</ListGroup.Item>
+                <Link href="/ship-management">
+                  <ListGroup.Item>Ship Management</ListGroup.Item>
+                </Link>
+                <Link href="/crew-management">
+                  <ListGroup.Item>Crew Management</ListGroup.Item></Link>
+                  <Link href="/ship-agency-logistics/">
+                <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item></Link>
+                <Link href="/inspection/"><ListGroup.Item>Inspection</ListGroup.Item></Link>
+                <Link href="/commercial-services/"><ListGroup.Item>Commercial Services</ListGroup.Item></Link>
                 </div>
               )}
-            <ListGroup.Item>Fleet</ListGroup.Item>
-            <ListGroup.Item>Careers</ListGroup.Item>
-            <ListGroup.Item>News & Insights</ListGroup.Item>
+            <Link href="/fleet/"><ListGroup.Item>Fleet</ListGroup.Item></Link>
+            <Link href="/careers/"><ListGroup.Item>Careers</ListGroup.Item></Link>
+            <Link href="/news-insights/"><ListGroup.Item>News & Insights</ListGroup.Item></Link>
             <ListGroup.Item onClick={handleClickMenu2}>About Us <i className="fa fa-angle-down"></i></ListGroup.Item>
             {isShownMenu2 && (
               <div>
-                <ListGroup.Item>Company</ListGroup.Item>
-                <ListGroup.Item>Team</ListGroup.Item>
+                <Link href="/company/"><ListGroup.Item>Company</ListGroup.Item></Link>
+                <Link href="/team/"><ListGroup.Item>Team</ListGroup.Item></Link>
               </div>
             )}
-            <ListGroup.Item>Contact</ListGroup.Item>
+            <Link href="/contact-us"><ListGroup.Item>Contact</ListGroup.Item></Link>
 
     </ListGroup>
    </Offcanvas.Body>

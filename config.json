@@ -1,5 +1,5 @@
 {
-    "SERVER_URL": "https://nautilusshipping.ivistaz.net/wp-json/wp/v2/",
-    "SERVER_FROM": "https://nautilusshipping.ivistaz.net/wp-json/"
+    "SERVER_URL": "https://beta.nautilusshipping.com/wp-json/wp/v2/",
+    "SERVER_FROM": "https://beta.nautilusshipping.com/wp-json/"
 
 }

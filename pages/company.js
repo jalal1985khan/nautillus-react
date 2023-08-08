@@ -1,8 +1,9 @@
 import React from 'react'
-import {Container, Row, Col,Card, Image, Accordion, Button} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image'
 
 
 const approach = () => {
@@ -12,11 +13,12 @@ const approach = () => {
     
     <Image
     src="/images/company_banner.jpeg"
-    width="100%"
+    width="800"
     height="620"
     background='no-repeat'
     background-size= 'cover'
     className="banner-img"
+    alt="nautilus shipping"
     
   />
 <Container className="text-box">
@@ -38,33 +40,32 @@ const approach = () => {
 <Container className=" text-box">
 <h1 className="heading pt-5 ">Our Ship Management services</h1>
 <Row className="pt-5 pb-5">
-<Col>
-<h3>Commercial Services</h3>
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Commercial Services</h3>
 <Link href="/commercial-services" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="nautilus shipping"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3>Crew Management</h3>
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Crew Management</h3>
 <Link href="/crew-management" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50"className="icon-arrow" alt="nautilus shipping"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3>Ship Agency & Logistics</h3>
+<Col xs={6} sm={3} >
+<h3 className="m-heading">Ship Agency & Logistics</h3>
 <Link href="/ship-agency-logistics" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="nautilus shipping"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3 style={{height:67}}>Inspection</h3>
+<Col xs={6} sm={3} className="mt-45 mt-46">
+<h3  className="m-heading">Inspection</h3>
 <Link href="/inspection" >
-    <Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+    <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="nautilus shipping"/></Button>
 </Link>
 </Col>    
 </Row>
 </Container>
-
 </Container>
 <Footer/>
     </div>

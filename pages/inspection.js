@@ -13,7 +13,7 @@ const approach = () => {
 
 <Image
         src="/images/insights_banner.jpeg"
-        width="1900"
+        width="800"
         height="620"
         background='no-repeat'
         background-size='cover'
@@ -38,31 +38,31 @@ const approach = () => {
 <h1 className="mb-4 mt-5 heading">Pre-Purchase inspection</h1>
 <div className="offer fs-5">
 <Row>
- <Col sm={1} className="self"><img src="/images/right.svg"/></Col>
+ <Col sm={1} className="self"><Image src="/images/right.svg" className="icon-svg" width="50" height="50"/></Col>
  <Col>Pre-shipment inspection of engineering & manufactured goods, agro products, mineral & ores for volume, weight, and quality as per specifications including supervision of carting, loading, and securing</Col>      
 </Row>
 </div>
 <div className="offer fs-5 mt-4">
 <Row>
- <Col sm={1} className="self"><img src="/images/right.svg"/></Col>
+ <Col sm={1} className="self"><Image src="/images/right.svg" className="icon-svg" width="50" height="50"/></Col>
  <Col>Cargo outturn - Supervision of discharge and delivery of cargo including Claim Control Services</Col>      
 </Row>
 </div>
 <div className="offer fs-5 mt-4">
 <Row>
- <Col sm={1} className="self"><img src="/images/right.svg"/></Col>
+ <Col sm={1} className="self"><Image src="/images/right.svg" className="icon-svg" width="50" height="50"/></Col>
  <Col>Marine Casualties and Cargo damages/losses – General Average</Col>      
 </Row>
 </div>
 <div className="offer fs-5 mt-4">
 <Row>
- <Col sm={1} className="self"><img src="/images/right.svg"/></Col>
+ <Col sm={1} className="self"><Image src="/images/right.svg" className="icon-svg" width="50" height="50"/></Col>
  <Col>On/Off Hire Survey, Draft Surveys, Break-bulk, Stowage & Securing of Cargo</Col>      
 </Row>
 </div>
 <div className="offer fs-5 mt-4">
 <Row>
- <Col sm={1} className="self"><img src="/images/right.svg"/></Col>
+ <Col sm={1} className="self"><Image src="/images/right.svg" className="icon-svg" width="50" height="50"/></Col>
  <Col>Supervision of Loading/Discharge of Project Cargoes</Col>      
 </Row>
 </div>
@@ -75,33 +75,32 @@ const approach = () => {
 <Container className=" text-box">
 <h1 className="heading pt-5 ">Our Ship Management services</h1>
 <Row className="pt-5 pb-5">
-<Col>
-<h3>Commercial Services</h3>
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Commercial Services</h3>
 <Link href="/commercial-services" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3>Crew Management</h3>
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Crew Management</h3>
 <Link href="/crew-management" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50"className="icon-arrow"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3>Ship Agency & Logistics</h3>
+<Col xs={6} sm={3} >
+<h3 className="m-heading">Ship Agency & Logistics</h3>
 <Link href="/ship-agency-logistics" >
-<Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
 </Link>
 </Col>    
-<Col>
-<h3 style={{height:67}}>Inspection</h3>
+<Col xs={6} sm={3} className="mt-45 mt-46">
+<h3  className="m-heading">Inspection</h3>
 <Link href="/inspection" >
-    <Button className="s_btn"> GO<img src="/images/arrow.svg" style={{height:50}}/></Button>
+    <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
 </Link>
 </Col>    
 </Row>
 </Container>
-
 </Container>
 <Footer/>
     </div>

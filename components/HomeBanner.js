@@ -18,30 +18,30 @@ function CardExample() {
                 
             /> */}
 <Container>
-<Row>
+<Row className="m-flex-row pt-5">
 <Col className="ban-text">Delivering excellence in
 technical and crew management</Col>    
-<Col className="icon-desc">
+<Col className="icon-desc pt-3">
 <Row className="icon-text">
-    <Col className="ani-text">
-<Image src="/images/ship.png" width="90" height="90" alt="ship"/>
+    <Col className="ani-text col-6">
+<Image src="/images/ship.png" width="90" height="90" alt="ship" className="svgicon" />
 <CountUp start={50} end={100} suffix={'+'}/>
 <p>Ships manned</p>
     </Col>
-    <Col className="ani-text">
-    <Image src="/images/database.png" width="90" height="90" alt="ship"/>
+    <Col className="ani-text col-6">
+    <Image src="/images/database.png" width="90" height="90" alt="ship" className="svgicon"/>
     <CountUp start={20000} end={50000} suffix={'+'} separator={','}/>
 <p>Seafarer database</p>
     </Col>
     </Row>
 <Row className="icon-text">
-<Col className="ani-text">
-<Image src="/images/crew.png" width="90" height="90" alt="ship"/>
+<Col className="ani-text col-6">
+<Image src="/images/crew.png" width="90" height="90" alt="ship" className="svgicon"/>
 <CountUp start={500} end={1000} suffix={'+'} separator={','}/>
 <p>Crew on active rolls</p>
     </Col>
-    <Col className="ani-text">
-<Image src="/images/clients.png" width="90" height="90" alt="ship"/>
+    <Col className="ani-text col-6">
+<Image src="/images/clients.png" width="90" height="90" alt="ship" className="svgicon"/>
 <CountUp start={20} end={50} suffix={'+'}/>
 <p>Clients</p>
     </Col>

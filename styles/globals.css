@@ -4,6 +4,15 @@ body {
     font-family: 'Merriweather', serif !important;
 }
 
+.reg-error {
+    font-size: 16px;
+    color: #fb0000;
+}
+.reg-success {
+    color: #8BC34A;
+    font-size: 17px;
+}
+
 .home-banner {
     height: 561px;
     width: 100%;
@@ -483,10 +492,7 @@ ul .f-text a {
     color: red;
 }
 
-.reg-success {
-    color: #027B9F;
-    font-size: 28px;
-}
+
 
 i.fa.fa-phone,
 i.fa.fa-envelope-o {
@@ -523,28 +529,68 @@ i.fa.fa-envelope-o {
 .banner-img {
     background-size: cover;
     height: auto;
+    width:100%;
 }
 img.logo {
-    width: 12%;
+    width: 100% !important;
 }
 .navbar-collapse {
     display: none;
 }
 .submenu{
- display: none;   
+    display: none;   
+   }
+   .list-group-item{
+       padding: 16px !important;    
+   }
+   .list-group-item:hover{
+       padding: 16px !important;
+       background-color: #017ba0;
+       color:#fff;    
+   }
+   .list-group{
+       border-radius: 0px;
+   }
+   .sitemap li{
+    font-size: 22px;  
+    padding-bottom: 18px;
+   }
+   .sitemap a{
+    text-decoration: none;
+    color:#000;
+   }
+   .thankyou{
+    height:400px;
+    background: linear-gradient(rgba(253, 253, 253, 0.881), rgba(254, 254, 254, 0.824)),  url("/images/titanic.jpg") no-repeat;
+    background-size:cover;
+   }
+   .thanktext{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: -webkit-center;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .thankyou {
+    display: flex;    
 }
-.list-group-item{
-    padding: 16px !important;    
+.mt-45{
+    margin-top: 0px !important;  
 }
-.list-group-item:hover{
-    padding: 16px !important;
-    background-color: #017ba0;
-    color:#fff;    
+.mt-46{
+    margin-top: 33px !important;  
 }
-.list-group{
-    border-radius: 0px;
+.img-team{
+    width:43% !important;
 }
 
+@media (min-width: 576px){
+    
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         color: white !important;
@@ -555,7 +601,138 @@ img.logo {
 }
 @media only screen and (max-width: 600px) {
     img.logo {
-        width: 30%;
+        width: 50% !important;
     }
+    .ban-text {
+        height: 480px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        font-size: 32px;
+    line-height: 41px;
+    }
+    .m-flex-row{
+        display: flex;
+        flex-direction: column; 
+    }
+    .icon-desc {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .icon-text {
+        width: 100%;
+    }
+    .ani-text span {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .ani-text {
+        font-size: 17px;
+    }
+    .ps-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .ps-text-sub {
+        font-size: 30px;
+    }
+    .naut-text span {
+        font-size: 32px;
+    }
+    .service-card{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .service-img {
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+    .m-row{
+        display: flex;
+        flex-direction: column;
+    }
+.navbar-toggler {
+    background-color: white !important;
+    color: rgb(255 255 255 / 0%) !important;
+}
+.list-group a{
+    text-decoration: none;
+}
+.m-width{
+    width:100%;
+}
+.text-box {
+    text-align: -webkit-left;
+    width: 100% !important;
+    margin-top: 47px !important;
+}
+.s_table {
+    height: 160px;
+    border: 1px solid #eaeaea;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.heading {
+    color: #017BA0;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+.m-heading{
+    font-size: 23px;
+}
+.mt-45{
+    margin-top: 28px !important;
+}
+.mt-46{
+    
+}
+img, svg {
+    width: 100% !important;
+    height: auto;
+}
+figure img{
+    width: 16% !important;
+    height: auto;
+}
+.icon{
+    width: 10% !important;    
+}
+.icons{
+    width: 30% !important;    
+}
+.icon-50{
+    width: 50% !important;    
+}
+.svgicon{
+    width: 50% !important;
+    height: auto;
+}
+.c-para {
+    font-size: 15px !important;
+    color: white !important;
+}
+.c-title {
+    font-size: 40px !important;
+    color: white !important;
+}
+.icon-svg{
+    width:7% !important;
+}
+.icon-arrow{
+width:50% !important;    
+}
+.thanktext {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: -webkit-center;
+
+}
+
 
 }

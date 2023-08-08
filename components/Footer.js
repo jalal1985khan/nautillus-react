@@ -5,7 +5,7 @@ import Image from "next/image";
 function AutoLayoutExample() {
   return (
     <Container className="footer-bg footer" fluid>
-      <Row>
+      <Row className="m-row">
         <Col>
         <h2 className="footer-text">About</h2>
         <hr/>
@@ -15,7 +15,7 @@ function AutoLayoutExample() {
                                 <li className="f-text"><Link href="/news-insights">News & Insights</Link></li>
                                 <li className="f-text"><Link href="/company">Company</Link></li>
                                 <li className="f-text"><Link href="/team">Team</Link></li>
-                                <li className="f-text"><Link href="/contact">Contact</Link></li>
+                                <li className="f-text"><Link href="/contact-us">Contact</Link></li>
                             </ul>
   
         </Col>

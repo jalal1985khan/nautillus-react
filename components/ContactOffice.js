@@ -8,7 +8,7 @@ const ContactOffice = () => {
 <h1 className="text-white">Our Offices</h1>
 
 <Row>
-<Col>
+          <Col lg={4} sm={12} className="pt-4">
 <Card>
 <Card.Header className="c-head">Chennai</Card.Header>
       <Card.Body className="office text-white">
@@ -20,7 +20,7 @@ const ContactOffice = () => {
       </Card.Body>
     </Card>
 </Col>
-<Col>
+<Col lg={4} sm={12} className="pt-4">
 <Card>
 <Card.Header className="c-head">Mumbai</Card.Header>
       <Card.Body className="office text-white">
@@ -32,7 +32,7 @@ const ContactOffice = () => {
       </Card.Body>
     </Card>
 </Col>
-<Col>
+<Col sm={12} lg={4} className="pt-4">
 <Card>
 <Card.Header className="c-head">Port Blair</Card.Header>
       <Card.Body className="office text-white">
@@ -48,7 +48,7 @@ South Andaman – 744103
 </Col>
 </Row>
 <Row className="mt-4 pb-4">
-<Col>
+<Col sm={12} lg={4} className="pt-4">
 <Card>
 <Card.Header className="c-head">Kochi</Card.Header>
       <Card.Body className="office text-white">
@@ -62,7 +62,7 @@ Giri Nagar,<br/>Cochin – 682020
       </Card.Body>
     </Card>
 </Col>
-<Col>
+<Col sm={12} lg={4} className="pt-4">
 <Card>
 <Card.Header className="c-head">Bangalore</Card.Header>
       <Card.Body className="office text-white">
@@ -74,7 +74,7 @@ Giri Nagar,<br/>Cochin – 682020
       </Card.Body>
     </Card>
 </Col>
-<Col>
+<Col sm={12} lg={4} className="pt-4">
 <Card>
 <Card.Header className="c-head">Singapore</Card.Header>
       <Card.Body className="office text-white">

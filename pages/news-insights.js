@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Col, Row, Container, Image ,Spinner} from 'react-bootstrap';
+import { Card, Button, Col, Row, Container,Image, Spinner} from 'react-bootstrap';
 import Link from 'next/link'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import configData from "../config.json";
+//import Image from 'next/image';
 
 const SuccessStories = () => {
   const [movies, setMovies] = useState([]);
@@ -81,7 +82,7 @@ const SuccessStories = () => {
       
       <Image
         src="/images/insights_banner.jpeg"
-        width="100%"
+        width="800"
         height="620"
         background='no-repeat'
         background-size='cover'
@@ -107,8 +108,8 @@ const SuccessStories = () => {
                     <Image
                       src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
                       alt={post['title']['rendered']}
-                      width="100%"
-                      height="250px"
+                      width="400"
+                      height="250"
                     />
                     <Card.Body className="b-border">
                       <Card.Title className="fs-4 mb-4 insights"  dangerouslySetInnerHTML={{__html:post['title']['rendered']}}/>

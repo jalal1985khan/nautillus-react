@@ -1,8 +1,9 @@
 import React from 'react'
-import {Container, Row, Col,Card, Image, Accordion, Button} from 'react-bootstrap';
+import {Container, Row, Col,Card,Accordion, Button} from 'react-bootstrap';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 
 const approach = () => {
@@ -12,11 +13,12 @@ const approach = () => {
     
     <Image
     src="/images/team_banner.jpeg"
-    width="100%"
+    width="800"
     height="620"
     background='no-repeat'
     background-size= 'cover'
     className="banner-img"
+    alt="Nautilus Shipping Teams"
     
   />
 <Container className="text-box-1 wbg-main">
@@ -26,7 +28,7 @@ const approach = () => {
 <Row>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/ajay_handa.png" style={{width:250}}/>
+              <Image class="card-img-top img-team" src="/images/ajay_handa.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Captain Ajay Handa</Card.Title>
         <hr className="line"/>
@@ -39,7 +41,7 @@ const approach = () => {
 </Col>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/anil_cariappa​.png" style={{width:250}}/>
+              <Image class="card-img-top img-team" src="/images/anil_cariappa​.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Anil Cariappa​</Card.Title>
         <hr className="line"/>
@@ -54,8 +56,8 @@ const approach = () => {
 
 <Row>
 <Col>
-<Card className="wbg-main">
-      <Card.Img variant="top" src="/images/manikandan.png" style={{width:250}}/>
+            <Card className="wbg-main">
+<Image class="card-img-top img-team" src="/images/manikandan.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Manikandan</Card.Title>
         <hr className="line"/>
@@ -68,7 +70,7 @@ const approach = () => {
 </Col>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/narayan_rajan.png" style={{width:250}}/>
+              <Image class="card-img-top img-team" src="/images/narayan_rajan.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Narayan Rajan</Card.Title>
         <hr className="line"/>
@@ -88,7 +90,7 @@ A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-fou
 <Row>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/ajay_krishnamani.png" style={{width:250}}/>
+<Image class="card-img-top img-team" src="/images/ajay_krishnamani.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Ajay Krishnamani</Card.Title>
         <hr className="line"/>
@@ -101,7 +103,7 @@ A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-fou
 </Col>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/viswananth_iyer.png" style={{width:250}}/>
+<Image class="card-img-top img-team" src="/images/viswananth_iyer.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">K.Viswananth Iyer</Card.Title>
         <hr className="line"/>
@@ -116,7 +118,7 @@ A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-fou
 <Row>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/ajay_gangaadharan​.png" style={{width:250}}/>
+<Image class="card-img-top img-team" src="/images/ajay_gangaadharan​.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Capt. Ajay Gangaadharan​</Card.Title>
         <hr className="line"/>
@@ -129,7 +131,7 @@ A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-fou
 </Col>
 <Col>
 <Card className="wbg-main">
-      <Card.Img variant="top" src="/images/visweswaran.png" style={{width:250}}/>
+<Image class="card-img-top img-team" src="/images/visweswaran.png" width="250" height="250" alt="nautilus shipping"/>
       <Card.Body>
         <Card.Title className="fs-2 text-white">Capt. Eshwar Visweswaran</Card.Title>
         <hr className="line"/>

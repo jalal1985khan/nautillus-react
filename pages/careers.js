@@ -124,7 +124,7 @@ return(
         height="620"
         background='no-repeat'
         background-size='cover'
-        
+        alt="nautilus shipping"
         className="banner-img"
         
       />
@@ -152,12 +152,12 @@ return(
             movies.map((post, index) => {
              // console.log(post);
 
-              const dateStr = post['acf']['joining_date'];
-              const year = dateStr.slice(0,4);
-              const month = dateStr.slice(4,6);
-              const day = dateStr.slice(6,8);
-              const date = new Date(`${year}-${month}-${day}`);
-             // console.log(date)
+              // const dateStr = post['acf']['joining_date'];
+              // const year = dateStr.slice(0,4);
+              // const month = dateStr.slice(4,6);
+              // const day = dateStr.slice(6,8);
+              // const date = new Date(`${year}-${month}-${day}`);
+             //console.log(date)
 
               return (
 <Container key={post.id} className="j-card mb-4">
@@ -168,17 +168,17 @@ return(
 <Col>Job id: {post['acf']['job_id']}</Col>    
 </Row>
 <Row>
-<Col><Col>Date Posted: {format(
+<Col><Col>Date Posted: 
+{format(
   new Date(post['date']),
   'dd/MM/yyyy'
 )}</Col></Col>    
 </Row>
 <Row>
 <Col>Joining Date: 
-{format(
-  new Date(date),
-  'dd/MM/yyyy'
-)}</Col>    
+ {post['acf']['joining_date']}
+                        
+</Col>    
 </Row>
 </Col>    
 <Col className="center">

@@ -1,6 +1,7 @@
 import { useState} from 'react';
 import axios from "axios";
-import {Container, Row, Col,Card, Image} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Office from '../components/ContactOffice';
@@ -57,13 +58,15 @@ function ContainerExample() {
                     setSuccess(false);
 
                 }
+                
                 else{
-                setErrName(response.data['invalid_fields'][0]['message']);
-                setErrEmail(response.data['invalid_fields'][1]['message']);
-                setErrSubject(response.data['invalid_fields'][2]['message']);
-                setSpinner(false);
+                 //setErrName(response.data['invalid_fields'][0]['message']);
+                 //setErrEmail(response.data['invalid_fields'][1]['message']);
+                 //setErrSubject(response.data['invalid_fields'][2]['message']);
+                    setSpinner(false);
+                    setLoading(true);
             }
-                // console.log(response.data)
+                 console.log(response.data)
             });
     }
 
@@ -74,11 +77,12 @@ function ContainerExample() {
     
       <Image
       src="/images/contact_banner.jpeg"
-      width="100%"
+      width="800"
       height="620"
       background='no-repeat'
       background-size= 'cover'
-      className="banner-img"
+              className="banner-img"
+              alt="nautlus Shipping"
       
     />
     <Container>
@@ -92,11 +96,12 @@ function ContainerExample() {
         </Col>
       </Row> 
 
-      <Row>
+      <Row className="m-row">
         <Col className="text-center">
-       <img src="/images/contact_img.jpeg"/>
+       <Image src="/images/contact_img.jpeg" width="700" height="620" className="m-width" alt="nautilus shipping"/>
         </Col>
-        <Col className="text-center">
+                      <Col className="text-center">
+                          
         {success &&
                     <form
                         onSubmit={handleSubmit}
@@ -166,8 +171,11 @@ function ContainerExample() {
                             
 
                     </form>
-                   }
-                   {loading && <h1 class="reg-success mt-4">{post}</h1>}
+                          }
+                          
+                          {loading && <h1 className="reg-success mt-4">
+                              
+                              {post}</h1>}
         </Col>
       </Row> 
       </Container>

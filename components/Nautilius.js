@@ -18,8 +18,8 @@ function CardExample() {
             /> */}
 <Container>
 <Row>
-<Col className="ban-text"></Col>    
-<Col className="icon-desc">
+<Col className="ban-text d-none d-lg-block"></Col>    
+<Col className="icon-desc col-lg-6 col-12 pt-5">
 <Row className="nuat-text">
     <Col className="naut-text">
 <CountUp start={5} end={15} suffix={' <small>Years.</small>'}/>
