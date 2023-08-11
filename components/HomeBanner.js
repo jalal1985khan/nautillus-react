@@ -25,12 +25,12 @@ technical and crew management</Col>
 <Row className="icon-text">
     <Col className="ani-text col-6">
 <Image src="/images/ship.png" width="90" height="90" alt="ship" className="svgicon" />
-<CountUp start={50} end={100} suffix={'+'}/>
+<CountUp start={50} end={200} suffix={'+'}/>
 <p>Ships manned</p>
     </Col>
     <Col className="ani-text col-6">
     <Image src="/images/database.png" width="90" height="90" alt="ship" className="svgicon"/>
-    <CountUp start={20000} end={50000} suffix={'+'} separator={','}/>
+    <CountUp start={20000} end={51000} suffix={'+'} separator={','}/>
 <p>Seafarer database</p>
     </Col>
     </Row>

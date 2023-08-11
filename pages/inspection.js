@@ -3,16 +3,34 @@ import {Container, Row, Col,Button} from 'react-bootstrap';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Contact from '../components/Contactus'
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 const approach = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Inspection - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
+        <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.nautilusshipping.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Inspection - Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="og:description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta property="og:url" content="https://www.nautilusshipping.com/" />
+        <meta property="og:site_name" content="Inspection - Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+        <meta property="og:image" content="/images/team_banner.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 <Header/>
 
 <Image
-        src="/images/insights_banner.jpeg"
+        src="/images/inspection-banner.jpg"
         width="800"
         height="620"
         background='no-repeat'
@@ -33,7 +51,7 @@ const approach = () => {
   /> */}
 <Container className="text-box">
 <h1 className="mb-4 mt-5 heading">Inspection</h1>
-<p className="fs-3 mt-4">Our expertise and focus on providing end-to-end solutions saw us launch an Inspections and Surveys practice in early 2014. The services offered under this include Fire Damage, Marine (Hull & Cargo), Engineering, Containers, Bunker and, other related Surveys.</p>
+<p className="fs-4 mt-4">Our expertise and focus on providing end-to-end solutions saw us launch an Inspections and Surveys practice in early 2014. The services offered under this include Fire Damage, Marine (Hull & Cargo), Engineering, Containers, Bunker and, other related Surveys.</p>
 
 <h1 className="mb-4 mt-5 heading">Pre-Purchase inspection</h1>
 <div className="offer fs-5">
@@ -75,35 +93,37 @@ const approach = () => {
 <Container className=" text-box">
 <h1 className="heading pt-5 ">Our Ship Management services</h1>
 <Row className="pt-5 pb-5">
-<Col xs={6} sm={3} className="mt-45">
-<h3 className="m-heading">Commercial Services</h3>
-<Link href="/commercial-services" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
-</Link>
-</Col>    
-<Col xs={6} sm={3} className="mt-45">
-<h3 className="m-heading">Crew Management</h3>
-<Link href="/crew-management" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50"className="icon-arrow"/></Button>
-</Link>
-</Col>    
-<Col xs={6} sm={3} >
-<h3 className="m-heading">Ship Agency & Logistics</h3>
-<Link href="/ship-agency-logistics" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
-</Link>
-</Col>    
 <Col xs={6} sm={3} className="mt-45 mt-46">
 <h3  className="m-heading">Inspection</h3>
 <Link href="/inspection" >
-    <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="50" height="50" className="icon-arrow"/></Button>
+    <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
+</Col>
+<Col xs={6} sm={3} className="mt-45 ">
+<h3 className="m-heading">Ship Agency &<br/>Logistics</h3>
+<Link href="/ship-agency-logistics" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
+</Col>
+<Col xs={6} sm={3} className="mt-45 ">
+<h3 className="m-heading">Crew<br/>Management</h3>
+<Link href="/crew-management" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50"className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
+</Col> 
+            
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Ship<br/>Management</h3>
+<Link href="/ship-management" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
 </Link>
 </Col>    
 </Row>
 </Container>
 </Container>
+      <Contact/>
 <Footer/>
-    </div>
+    </>
   )
 }
 

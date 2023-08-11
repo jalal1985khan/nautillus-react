@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Link from 'next/link';
 
 function BasicExample() {
   return (
@@ -13,7 +14,7 @@ function BasicExample() {
         <Card.Text className="c-para">
         Our experience and capability spans a number of fleet sectors within the maritime industry.
         </Card.Text>
-        <Button variant="primary" className="nuat-btn">Go somewhere</Button>
+        <Link href="/fleet" className="btn nuat-btn text-white">Read More</Link>
       </Card.Body>
     </Card>
     </Container>

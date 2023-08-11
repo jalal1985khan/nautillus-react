@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Office from '../components/ContactOffice';
 import configData from "config.json";
+import Head from 'next/head';
 
 
 
@@ -72,7 +73,23 @@ function ContainerExample() {
 
 
   return (
-    <>
+      <>
+          <Head>
+        <title>Contact - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
+        <meta name="description" content="Delivering excellence in technical and crew management" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.nautilusshipping.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact - Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="og:description" content="Delivering excellence in technical and crew management 1 + Ships manned 100 + Seafarer database 100 + Crew on active rolls 1 + Clients Delivering excellence in technical and crew management Gc, Container, Tankers, Bulk carriers 10 + Ships manned 100 + Seafarer database 100 + Crew on active rolls 10 + Clients Powering ship [&hellip;]" />
+        <meta property="og:url" content="https://www.nautilusshipping.com/" />
+        <meta property="og:site_name" content="Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+        <meta property="og:image" content="/images/team_banner.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
     <Header/>
     
       <Image
@@ -181,7 +198,9 @@ function ContainerExample() {
       </Container>
     </Container>
 <Office/>
-
+<Container className="g-0" fluid >
+<iframe src="https://www.google.com/maps/d/embed?mid=1IBRS53rdQ_0XFaEjZIsta38g6BXSkMc&ehbc=2E312F" width="100%" height="480"></iframe>
+</Container>
     <Footer/>
 
 

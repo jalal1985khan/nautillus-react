@@ -3,7 +3,9 @@ import {Container, Row, Col,Card, Image, Accordion, Button} from 'react-bootstra
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Contact from '../components/Contactus'
 import Head from 'next/head';
+
 
 
 const approach = () => {
@@ -42,8 +44,8 @@ const approach = () => {
   />
 <Container className="text-box">
 <h1 className="mb-4 mt-5 heading">Ship Management & Technical Services</h1>
-<p className="fs-4 mt-4">Ship management involves a range of services such as technical support, commercial, procurement, crewing, and safety management.</p>
-<p className="fs-4">As part of our solutions, we provide complete ship management services to help keep vessels safe and in an optimum running condition. This helps your operations to experience minimum downtime.</p>
+<p className="fs-4 mt-4">Ship management involves a range of services such as <Link href="/technical-ship-management" className="n-link">technical support</Link>, commercial, procurement, crewing, and safety management.</p>
+<p className="fs-4">As part of our solutions, we provide complete <Link href="/shipmanagement-services" className="n-link">ship management services</Link> to help keep vessels safe and in an optimum running condition. This helps your operations to experience minimum downtime.</p>
 <Row>
 <Col sm={6}><p className="fs-4">We make this possible through a dedicated team of professionals both offshore and onboard. Our experienced team provides the above-mentioned services for most types of vessels. We are among the fastest growing ship managers in the region with 12 vessels of all types currently under management. These include bulkers, tankers, and container vessels.</p></Col>
 <Col sm={6}><Image src="/images/ship_manage_1.jpeg" className="m-width" width="500" height="300" alt="Nautilus Shipping"/></Col>
@@ -51,19 +53,19 @@ const approach = () => {
 <p className="fs-4">Our network of offices in Singapore and India meets the highest standards and accreditations for quality, knowledge, and safety.</p>
 <h1 className="heading mt-5 mb-4">Our Technical Management services include:</h1>
 <Row>
-<Col className="s_table col-6">Full technical management of vessels</Col>
-<Col className="s_table col-6">Technical inspections for owners, banks, insurers, bareboat charterers</Col>
-<Col className="s_table col-12">Superintendence for emergency or scheduled repairs and dry-docking</Col>
+          <Col className="s_table" xs={6} lg={4}>Full technical management of vessels</Col>
+<Col className="s_table" xs={6} lg={4}>Technical inspections for owners, banks, insurers, bareboat charterers</Col>
+<Col className="s_table" sm={12} lg={4}>Superintendence for emergency or scheduled repairs and dry-docking</Col>
 </Row>
 <Row>
-<Col className="s_table col-6" >On/off hire surveys</Col>
-<Col className="s_table col-6">Ship specific, computerized planned maintenance system</Col>
-<Col className="s_table col-12">Ensuring availability of correct spares on board</Col>
+<Col className="s_table" xs={6} lg={4} >On/off hire surveys</Col>
+<Col className="s_table" xs={6} lg={4}>Ship specific, computerized planned maintenance system</Col>
+<Col className="s_table" sm={6} lg={4}>Ensuring availability of correct spares on board</Col>
 </Row>
 <Row>
-<Col className="s_table col-6">Periodic analysis of fuel and lubricants</Col>
-<Col className="s_table col-6">Monitoring of peak performance metrics</Col>
-<Col className="s_table col-12">Regular inspections of the vessels and implementation of timely corrective action</Col>
+<Col className="s_table" xs={6} lg={4}>Periodic analysis of fuel and lubricants</Col>
+<Col className="s_table" xs={6} lg={4}>Monitoring of peak performance metrics</Col>
+<Col className="s_table" sm={6} lg={4}>Regular inspections of the vessels and implementation of timely corrective action</Col>
 </Row>
 <Row>
 <Col className="s_table">Tech monitoring analysis and solution for better performance</Col>
@@ -118,9 +120,10 @@ const approach = () => {
 <Container className="text-box">
     <h1 className="mt-5 mb-4">Consultancy</h1>
 <Row>
-          <Col className="s_table" xs={6}>Ship inspections and valuations</Col>
-<Col className="s_table" xs={6}>Sale and Purchase inspections</Col>
-<Col className="s_table" xs={12}>Technical experts and expert witnesses for banks, law firms, and owners</Col>
+<Col className="s_table " xs={6} lg={6}>Ship inspections and valuations</Col>
+<Col className="s_table " xs={6} lg={6}>Sale and Purchase inspections</Col>
+<Col className="s_table " xs={6} lg={6}>Technical experts and expert witnesses for banks, law firms, and owners</Col>
+<Col className="s_table " xs={6} lg={6}>Setup and administration of ship-owning companies</Col>
 </Row>    
 
 <h1 className="mt-5 mb-4">Insurance</h1>
@@ -166,33 +169,35 @@ const approach = () => {
 <Container className=" text-box">
 <h1 className="heading pt-5 ">Our Ship Management services</h1>
 <Row className="pt-5 pb-5">
-<Col xs={6} sm={3} className="mt-45">
-<h3 className="m-heading">Commercial Services</h3>
-<Link href="/commercial-services" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
-</Link>
-</Col>    
-<Col xs={6} sm={3} className="mt-45">
-<h3 className="m-heading">Crew Management</h3>
-<Link href="/crew-management" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50"className="icon-arrow" alt="Nautilus Shipping"/></Button>
-</Link>
-</Col>    
-<Col xs={6} sm={3} >
-<h3 className="m-heading">Ship Agency & Logistics</h3>
-<Link href="/ship-agency-logistics" >
-<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
-</Link>
-</Col>    
 <Col xs={6} sm={3} className="mt-45 mt-46">
 <h3  className="m-heading">Inspection</h3>
 <Link href="/inspection" >
     <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
 </Link>
+</Col>
+<Col xs={6} sm={3} className="mt-45 ">
+<h3 className="m-heading">Ship Agency &<br/>Logistics</h3>
+<Link href="/ship-agency-logistics" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
+</Col>
+<Col xs={6} sm={3} className="mt-45 ">
+<h3 className="m-heading">Crew<br/>Management</h3>
+<Link href="/crew-management" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50"className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
+</Col> 
+            
+<Col xs={6} sm={3} className="mt-45">
+<h3 className="m-heading">Ship<br/>Management</h3>
+<Link href="/ship-management" >
+<Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping"/></Button>
+</Link>
 </Col>    
 </Row>
 </Container>
 </Container>
+      <Contact/>
 <Footer/>
     </div>
   )

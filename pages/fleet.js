@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from "next/image";
 import Head from 'next/head';
+import Link from 'next/link';
 
 
 const approach = () => {
@@ -79,7 +80,7 @@ const approach = () => {
  <Col>The offshore industry has been quite volatile in the past years, and therefore, timing is key. We understand that quick mobilization and demobilization of crew play an important part in the operations of the offshore vessels and our clients will confirm our ability to demonstrate mobility and speed.</Col>      
 </Row>
 </div>
-<p className="fs-4 mt-4 mb-4">Write to us at hello@nautilusshipping.com and we will get back to you​.</p>
+<p className="fs-4 mt-4 mb-4">Write to us at <Link href="mailto:hello@nautilusshipping.com" className="m-link">hello@nautilusshipping.com</Link> and we will get back to you​.</p>
 
 </Container>
 

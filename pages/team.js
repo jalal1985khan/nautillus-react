@@ -4,11 +4,28 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 const approach = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Our Team | Nautilus Shipping</title>
+        <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.nautilusshipping.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Our Team | Nautilus Shipping" />
+        <meta property="og:description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta property="og:url" content="https://www.nautilusshipping.com/" />
+        <meta property="og:site_name" content="Our Team | Nautilus Shipping" />
+        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+        <meta property="og:image" content="/images/team_banner.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 <Header/>
     
     <Image
@@ -147,7 +164,7 @@ A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-fou
 <hr className="line pb-5"/>
 </Container>
 <Footer/>
-    </div>
+    </>
   )
 }
 

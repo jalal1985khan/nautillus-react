@@ -67,7 +67,8 @@ Giri Nagar,<br/>Cochin – 682020
 <Card.Header className="c-head">Bangalore</Card.Header>
       <Card.Body className="office text-white">
         <Card.Text className="txt-18">
-        Samrah Plaza, St. Marks Road,<br/>Shanthala Nagar, Ashok Nagar,<br/>Bengaluru -560001
+        Reliaable Phoenix Towers,<br/>
+4th Floor, 16 & 16/1, <br/>Museum Road, <br/>Bengaluru – 560025
         </Card.Text>
         <hr/>
         <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i> +91 80 41966600</Card.Title>

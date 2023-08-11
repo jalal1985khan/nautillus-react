@@ -4,11 +4,28 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image'
+import Head from 'next/head';
 
 
 const approach = () => {
   return (
-    <div>
+    <>
+ <Head>
+        <title>Maritime Services and Solutions | Nautilus Shipping Company India</title>
+        <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.nautilusshipping.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Maritime Services and Solutions | Nautilus Shipping Company India" />
+        <meta property="og:description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta property="og:url" content="https://www.nautilusshipping.com/" />
+        <meta property="og:site_name" content="Maritime Services and Solutions | Nautilus Shipping Company India" />
+        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+        <meta property="og:image" content="/images/team_banner.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 <Header/>
     
     <Image
@@ -30,7 +47,7 @@ const approach = () => {
 <h1 className="mb-4 mt-5">Specifically, we offer:</h1>
 <p className="fs-5 mt-4">Our experienced team, along with a carefully cultivated network of agencies, suppliers, and solution providers puts us in a strong position to deliver ship management services seamlessly.</p>
 <p className="fs-5 mt-4">We are guided by our philosophy of keeping the business goals of our clients at the forefront of everything we do. You can read more about this in our 4Ps approach here.</p>
-<Button className="c_btn">Get in touch with the seafaring experts today</Button>
+<Link href="/contact-us" className="btn c_btn">Get in touch with the seafaring experts today</Link>
 
 <h2 className="mt-5">We are a registered Recruitment & Placement agency authorized by the Director-General of Shipping, India.</h2>
 <p className="heading-1">Our license No. is RPSL-CHN-012, valid till December 29, 2026 and we operate in compliance with Maritime Labour Convention 2006 certified by IRS Class. Nautilus is also an ISO 9001:2008 company, certified by IRQS.</p>
@@ -68,7 +85,7 @@ const approach = () => {
 </Container>
 </Container>
 <Footer/>
-    </div>
+    </>
   )
 }
 

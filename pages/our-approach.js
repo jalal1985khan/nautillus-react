@@ -3,14 +3,31 @@ import {Container, Row, Col,Card, Accordion} from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 const approach = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Our Approach - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
+        <meta name="description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="canonical" href="https://www.nautilusshipping.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Our Approach - Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="og:description" content="We provide Maritime solutions which include Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys Commercial Vessel Management" />
+        <meta property="og:url" content="https://www.nautilusshipping.com/" />
+        <meta property="og:site_name" content="Our Approach - Ship Management Company, Vessel Management Services | Nautilus Shipping" />
+        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+        <meta property="og:image" content="/images/team_banner.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 <Header/>
 <Container>
-<Image src="/images/the_4Ps_Banner.jpeg" className="m-width" width="1300" height="700" alt="nautilus shipping"/>
+<Image src="/images/the_4Ps_Banner.jpeg" className="m-width" width="1200" height="700" alt="nautilus shipping"/>
 </Container>
 <Container className="text-box">
 <h1 className="fs-1">Our Approach</h1>
@@ -45,7 +62,7 @@ const approach = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3" >
-        <Accordion.Header >Profit-making for ship owners</Accordion.Header>
+        <Accordion.Header >Port state control – Minimum non serious deficiencies and zero detentions</Accordion.Header>
         <Accordion.Body className="a-tab-text">
         Our approach to problem-solving also means that we take thorough ship inspection seriously for compliance, safety, equipment condition, documentation, people health, fitness, cargo handling, and overall emergency preparedness. This has resulted in minimum non-serious deficiencies identified and zero detentions of the ships that we have managed, by port state control.
         </Accordion.Body>
@@ -62,7 +79,7 @@ const approach = () => {
 </Container>
 
 <Footer/>
-    </div>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import {Container, Image, Row, Col, Button} from 'react-bootstrap';
 import CountUp from 'react-countup';
+import Link from 'next/link';
 
 function CardExample() {
 
@@ -31,7 +32,8 @@ function CardExample() {
 <Row className="nuat-text">
 <Col className="naut-text">
     <p>And a journey of sailing through some incredible achievements and relationships.</p>
-    <p><Button className="nuat-btn">Know More</Button></p>
+                  
+                  <Link href="/company" className="btn nuat-btn text-white">Know More</Link>
     </Col>
     </Row>
 </Col>

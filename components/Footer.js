@@ -1,21 +1,25 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import Link from 'next/link';
 import Image from "next/image";
+import { useRouter } from 'next/router';
+import ScrollToTop from "react-scroll-to-top";
 
 function AutoLayoutExample() {
+  const router = useRouter();
   return (
     <Container className="footer-bg footer" fluid>
+      <ScrollToTop smooth />
       <Row className="m-row">
         <Col>
         <h2 className="footer-text">About</h2>
         <hr/>
         <ul className="fs-4 list-unstyled">
-                                <li className="f-text"><Link href="/our-approach">Our Approach</Link></li>
-                                <li className="f-text"><Link href="/careers">Careers</Link></li>
-                                <li className="f-text"><Link href="/news-insights">News & Insights</Link></li>
-                                <li className="f-text"><Link href="/company">Company</Link></li>
-                                <li className="f-text"><Link href="/team">Team</Link></li>
-                                <li className="f-text"><Link href="/contact-us">Contact</Link></li>
+                                <li className="f-text"><Link href="/our-approach" className={router.pathname == "/our-approach" ? "active" : ""}>Our Approach</Link></li>
+                                <li className="f-text"><Link href="/careers" className={router.pathname == "/careers" ? "active" : ""}>Careers</Link></li>
+                                <li className="f-text"><Link href="/news-insights" className={router.pathname == "/news-insights" ? "active" : ""}>News & Insights</Link></li>
+                                <li className="f-text"><Link href="/company" className={router.pathname == "/company" ? "active" : ""}>Company</Link></li>
+                                <li className="f-text"><Link href="/team" className={router.pathname == "/team" ? "active" : ""}>Team</Link></li>
+                                <li className="f-text"><Link href="/contact-us" className={router.pathname == "/contact-us" ? "active" : ""}>Contact</Link></li>
                             </ul>
   
         </Col>
@@ -23,11 +27,11 @@ function AutoLayoutExample() {
         <h2 className="footer-text">Services</h2>
         <hr/>
         <ul className="fs-4 list-unstyled">
-                                <li className="f-text"><Link href="/ship-management/">Ship Management</Link></li>
-                                <li className="f-text"><Link href="/crew-management/">Crew Management</Link></li>
-                                <li className="f-text"><Link href="/ship-agency-logistics">Ship Agency & Logistics</Link></li>
-                                <li className="f-text"><Link href="/inspection">Inspection</Link></li>
-                                <li className="f-text"><Link href="/commercial-services">Commercial Services</Link></li>
+                                <li className="f-text"><Link href="/ship-management/" className={router.pathname == "/ship-management" ? "active" : ""}>Ship Management</Link></li>
+                                <li className="f-text"><Link href="/crew-management/" className={router.pathname == "/crew-management" ? "active" : ""}>Crew Management</Link></li>
+                                <li className="f-text"><Link href="/ship-agency-logistics" className={router.pathname == "/ship-agency-logistics" ? "active" : ""}>Ship Agency & Logistics</Link></li>
+                                <li className="f-text"><Link href="/inspection" className={router.pathname == "/inspection" ? "active" : ""}>Inspection</Link></li>
+                                <li className="f-text"><Link href="/commercial-services" className={router.pathname == "/commercial-services" ? "active" : ""}>Commercial Services</Link></li>
                                 
                             </ul>   
         </Col>
@@ -35,7 +39,7 @@ function AutoLayoutExample() {
         <h2 className="footer-text">Fleet</h2>
         <hr/>
         <ul className="fs-4 list-unstyled">
-                                <li className="f-text"><Link href="/fleet/">Fleet</Link></li>
+                                <li className="f-text"><Link href="/fleet" className={router.pathname == "/fleet" ? "active" : ""}>Fleet</Link></li>
                             </ul>  
         
         </Col>
@@ -44,9 +48,9 @@ function AutoLayoutExample() {
         <hr className="footer-div"/>
         <ul className="fs-4 list-unstyled">
                                 <li className="f-text">Email us :</li>
-                                <li className="f-text"><Link href="/ship-agency-logistics">hello@nautilusshipping.com</Link></li>
+                                <li className="f-text"><Link href="mailto:hello@nautilusshipping.com">hello@nautilusshipping.com</Link></li>
                                 <li className="f-text">Call us</li>
-                                <li className="f-text"><Link href="/commercial-services">+ 91 44 4684 9999</Link></li>
+                                <li className="f-text"><Link href="tel:+914446849999">+ 91 44 4684 9999</Link></li>
                                 
                             </ul> 
                             <Container>
@@ -62,9 +66,9 @@ function AutoLayoutExample() {
       <hr/>
       <Container>
         <ul className="list-unstyled d-flex justify-content-center">
-        <li className="f-text px-3"><Link href="/sitemap/">Sitemap</Link></li>
-        <li className="f-text px-3"><Link href="/privacy-statement/">Privacy Statement</Link></li>
-        <li className="f-text"><Link href="/disclaimer/">Disclaimer</Link></li>
+        <li className="f-text px-3"><Link href="/sitemap" className={router.pathname == "/sitemap" ? "active" : ""}>Sitemap</Link></li>
+        <li className="f-text px-3"><Link href="/privacy-statement" className={router.pathname == "/privacy-statement" ? "active" : ""}>Privacy Statement</Link></li>
+        <li className="f-text"><Link href="/disclaimer" className={router.pathname == "/disclaimer" ? "active" : ""}>Disclaimer</Link></li>
         </ul>
       </Container>
     </Container>
