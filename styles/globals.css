@@ -3,6 +3,9 @@
 body {
     font-family: 'Merriweather', serif !important;
 }
+.dateicon{
+    font-size: 36px;
+    }
 .post-text p{
     font-size: 23px;
 }
@@ -11,7 +14,30 @@ body {
 }
 .post-text a{
    color:#c36;
+   text-decoration: none;
 }
+.post-text figure img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    width: 100% !important;
+}
+ol li{
+    font-size: 23px;   
+}
+
+li a{
+    color:#c36;
+    text-decoration: none;
+ }
+ .post-text .wp-video video {
+    width: 1200px;
+}
+ p a{
+    color:#c36;
+    text-decoration: none;
+ }
 .post-text div p img {
     width: 70%;
     height: auto;
@@ -392,6 +418,19 @@ a.menu:hover {
     border-radius: 36px 36px 36px 36px !important;
 }
 
+.read_btn:hover {
+    font-family: "Merriweather", Sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    fill: #017BA0;
+    color: #fff !important;
+    background-color: #017BA0 !important;
+    border-style: solid !important;
+    border-width: 3px 3px 3px 3px !important;
+    border-color: #017BA0 !important;
+    border-radius: 36px 36px 36px 36px !important;
+}
+
 .b-border {
     border-bottom: 4px solid #017BA0;
 }
@@ -426,7 +465,12 @@ ul .f-text a {
     background-repeat: no-repeat;
     height: 700px;
 }
-
+.banner-s{
+    background: rgb(2 123 158 / 17%);
+    box-shadow: 0 200px 100px -100px rgb(2 123 158 / 60%) inset, 0 0 5px rgb(2 123 158 / 75%);
+    transition: background 2s ease,box-shadow 2s ease;
+   
+}
 .post-banner {
     background-repeat: no-repeat;
     height: 450px;
@@ -440,7 +484,7 @@ ul .f-text a {
 }
 
 .back-btn {
-    border-radius: 0px !important;
+    border-radius: 25px !important;
     background-color: #034F66 !important;
     border: 0px !important;
 }

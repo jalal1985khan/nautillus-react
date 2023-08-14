@@ -4,6 +4,12 @@ import Router from 'next/router';
 import Head from 'next/head'
 import {Col,Container, Row, Image, Button} from 'react-bootstrap';
 import configData from "config.json";
+import Moment from 'react-moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 const post = ({data}) => {
@@ -16,8 +22,10 @@ const post = ({data}) => {
 <div className='grid grid-cols-3 gap-5 w-full'>
 {
 data.map((post)=>{
-    console.log(post)
+  console.log(post)
+  const dateToFormat = post['date'];
 return (
+  
   <>
 <Head key={post.id}>
 {/* <!-- HTML Meta Tags --> */}
@@ -38,40 +46,45 @@ return (
 <meta name="twitter:title" content={post['yoast_head_json']['title']}></meta>
 <meta name="twitter:description" content={post['yoast_head_json']['description']}></meta>
 <meta name="twitter:image" content=""></meta>
+
 </Head>      
 
-<Container fluid key={post.id} className="post-banner" style={{ backgroundImage: `url(${post['_embedded']['wp:featuredmedia'][0]['source_url']})`}}>
-<Row>
-<Col><Button className="back-btn" onClick={() => Router.back()}>Back</Button></Col>
-</Row>
-<Row>
+<Container fluid  className="post-banner" style={{ backgroundImage: `url(${post['_embedded']['wp:featuredmedia'][0]['source_url']})`}}>
+<Row >
+        <Col className="mt-3"><Button className="back-btn" onClick={() => Router.back()}>
+        <FontAwesomeIcon
+        icon={faAnglesLeft}
+      />
+          Back</Button></Col>
+</Row >      
+<Row className="d-flex flex-column banner-s pt-3">
+      <Col>
+      <FontAwesomeIcon
+        icon={faCalendarDays}
+        className="dateicon"
+      /> - 
+      <Moment
+        format="D MMM YYYY"
+        withTitle
+        className="fs-4"
+      >{dateToFormat}</Moment>
+</Col> 
 <Col><h1 className="fs-2 " dangerouslySetInnerHTML={{__html:post['title']['rendered']}}/></Col>    
 </Row>
 
 </Container>
 <Container className="pt-4">
+
 </Container>
-    <Container className="mx-auto post-text">
+    
+<Container className="mx-auto post-text">    
 <div dangerouslySetInnerHTML={{__html:post['content']['rendered']}}/>
-</Container>               
-
-
-
-
+</Container>  
+    
+             
 <Footer/>
-
-
 </>
-
-
-
-
-
-
-
 )
-
-
 
 })}
 
@@ -82,12 +95,8 @@ return (
 
 export default post
 
-
-
-
 export async function getServerSideProps(context){
     const {id} = context.params;
-
     const res = await fetch(`${configData.SERVER_URL}posts?_embed&slug=${id}`);
     const data = await res.json();
     return {props:{data}}
