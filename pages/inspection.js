@@ -30,24 +30,16 @@ const approach = () => {
 <Header/>
 
 <Image
-        src="/images/inspection-banner.jpeg"
-        width="800"
-        height="620"
-        background='no-repeat'
-        background-size='cover'
-        className="banner-img"
-        
-      />
-    
-  {/* <Image
-    src="/images/insights_banner.jpeg"
-    width="1500"
+    src="/images/fleet_banner.jpeg"
+    width="800"
     height="620"
     background='no-repeat'
     background-size= 'cover'
-    className="banner-img"~
+    className="banner-img"
+    alt="nautilus shipping"
     
-  /> */}
+  />
+
 <Container className="text-box">
 <h1 className="mb-4 mt-5 heading">Inspection</h1>
 <p className="fs-4 mt-4">Our expertise and focus on providing end-to-end solutions saw us launch an Inspections and Surveys practice in early 2014. The services offered under this include Fire Damage, Marine (Hull & Cargo), Engineering, Containers, Bunker and, other related Surveys.</p>
