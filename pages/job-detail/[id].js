@@ -8,8 +8,17 @@ import Head from 'next/head'
 import { useState } from 'react';
 
 
-const FileUploader = ({data}) => {
+
+
+const FileUploader = ({ data }) => {
+  
+
+  const [success, setSuccess] = useState(true);
   const [file, setFile] = useState(null);
+  const [post, setPost] = useState();
+  const [loading, setLoading] = useState(false);
+
+
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -28,7 +37,11 @@ const FileUploader = ({data}) => {
         });
 
         if (response.ok) {
-          console.log('File uploaded successfully');
+          //console.log(response)
+          //console.log('File uploaded successfully');
+          setSuccess(false);
+          setPost("Your resume has been sent successfully");
+          setLoading(true);
           // You can now trigger the Contact Form 7 submission using the WordPress REST API
         } else {
           console.error('File upload failed');
@@ -94,11 +107,19 @@ data.map((post)=>{
 
 })}
 
-      
+{success &&   
     <Container className="mt-5 mb-5">
       <input type="file" onChange={handleFileChange} className="custom-file-input" />
       <button onClick={handleUpload} className="career-btn">Upload</button>
       </Container>
+      }
+      <Container className="mt-5 mb-5">
+      {loading &&
+        <h1 class="reg-success mt-4 fs-2">{post}</h1>
+        }
+        </Container>
+        
+
       <Footer/>
       </>
   );
