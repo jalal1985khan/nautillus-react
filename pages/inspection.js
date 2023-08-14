@@ -30,7 +30,7 @@ const approach = () => {
 <Header/>
 
 <Image
-    src="/images/fleet_banner.jpeg"
+    src="/images/New-Inspection-banner.jpeg"
     width="800"
     height="620"
     background='no-repeat'
