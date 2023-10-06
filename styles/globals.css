@@ -44,6 +44,9 @@ li a{
     display: flex;
     flex-direction: column;
 }
+.error{
+    color:red;
+}
 .scroll-to-top {
     background-color: #027B9F !important;
     right: 40px;
