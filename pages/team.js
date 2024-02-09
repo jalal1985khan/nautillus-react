@@ -93,9 +93,6 @@ const approach = () => {
         <hr className="line"/>
         <Card.Title className="fs-4 txt">Co-Founder & Managing Director</Card.Title>
         <Card.Text className="fs-5 txt">
-        Engineer. Was with V Ships between 2007 & 2020. He headed V Ships India as MD before taking over as CEO in Nautilus
-
-
 Narayan Rajan
 Co-Founder & Managing Director
 A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-founded Nautilus Shipping in 2005.  During his 15+ years stint as the CEO and CO-Founder of Nautilus, Narayan has been the driving force behind the company’s commercial operation. A keen observer of business and technology trends, Narayan constantly looks at ways to customize existing offerings and new possibilities. Narayan holds a Bachelor’s Degree in Electronics from St. Joseph’s Arts and Science College, Bangalore.
